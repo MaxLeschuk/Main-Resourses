@@ -1,0 +1,3 @@
+create table Countries ( Country VARCHAR(20) NOT NULL , CountryCode VARCHAR(3), PRIMARY KEY(CountryCode));
+create table Towns( Country varchar(3) NOT NULL ,Town varchar(20), Population double(10,3),
+FOREIGN KEY (Country) references Countries(CountryCode));
